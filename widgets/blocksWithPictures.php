@@ -139,7 +139,7 @@ class Elementor_blocksWithPictures extends \Elementor\Widget_Base
             }
 
             .richText h2 {
-                font-size: 4rem;
+                font-size: 3rem;
             }
 
             .richText p {
@@ -176,6 +176,10 @@ class Elementor_blocksWithPictures extends \Elementor\Widget_Base
             @media screen and (max-width: 600px) {
                 .cardsWhere {
                     grid-template-columns: repeat(2, 1fr);
+                }
+
+                .richText h2 {
+                    font-size: 1.5rem;
                 }
             }
         </style>

@@ -137,7 +137,7 @@ class Elementor_ourServices extends \Elementor\Widget_Base
 			}
 
 			.title h2 {
-				font-size: 4rem;
+				font-size: 3rem;
 			}
 
 			.additionalServices {
@@ -201,6 +201,10 @@ class Elementor_ourServices extends \Elementor\Widget_Base
 				.additionalServicesText {
 					padding: 15px;
 					gap: 15px;
+				}
+
+				.title h2 {
+					font-size: 1.5rem;
 				}
 			}
 		</style>
