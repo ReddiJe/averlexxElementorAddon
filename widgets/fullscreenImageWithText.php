@@ -95,18 +95,31 @@ class Elementor_fullscreenImageWithText extends \Elementor\Widget_Base
                 position: relative;
                 z-index: 1;
                 color: white;
-                font-size: 2em;
+                font-size: 2.5em;
                 text-align: center;
             }
 
             @media (max-width: 768px) {
                 .fullscreen-section {
                     flex-direction: column;
+                    height: auto;
+                }
+
+                .fullscreen-image img {
+                    height: 50vh;
                 }
 
                 .fullscreen-text {
                     margin-top: 20px;
                     font-size: 1.5em;
+                    color: #2c2d2c; /* Черный цвет для текста на мобильных */
+                }
+            }
+
+            @media (min-width: 769px) {
+                .fullscreen-text {
+                    font-size: 3em; /* Увеличенный шрифт для ПК */
+                    color: white; /* Белый цвет текста для ПК */
                 }
             }
         </style>
