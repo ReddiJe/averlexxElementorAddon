@@ -69,6 +69,7 @@ class Elementor_fullscreenImageWithText extends \Elementor\Widget_Base
                 min-height: 100vh;
                 justify-content: center;
                 align-items: center;
+                padding-bottom: 50px;
             }
 
             .fullscreen-image {
@@ -99,6 +100,8 @@ class Elementor_fullscreenImageWithText extends \Elementor\Widget_Base
                     flex-direction: column;
                     height: auto;
                     position: relative;
+                    min-height: 50vh;
+                    padding-bottom: 25px;
                 }
 
                 .fullscreen-image {
@@ -115,6 +118,9 @@ class Elementor_fullscreenImageWithText extends \Elementor\Widget_Base
                 .fullscreen-text {
                     margin-top: 20px;
                     font-size: 1.5em;
+                }
+
+                .fullscreen-text p {
                     color: #2c2d2c;
                 }
             }
