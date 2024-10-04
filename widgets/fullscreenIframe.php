@@ -67,8 +67,7 @@ class Elementor_fullscreenIframe extends \Elementor\Widget_Base
                 align-items: center;
                 position: relative;
                 width: 100%;
-                padding-left: 20px;
-                padding-right: 20px;
+                padding: 20px;
             }
 
             .fullscreen-iframe {
