@@ -15,7 +15,7 @@ class Elementor_fullscreenIframe extends \Elementor\Widget_Base
 
     public function get_icon()
     {
-        return 'eicon-code';
+        return 'fa fa-map';
     }
 
     public function get_categories()
