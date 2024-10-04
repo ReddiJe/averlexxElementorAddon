@@ -82,11 +82,12 @@ class Elementor_RichTextWithAlignment extends \Elementor\Widget_Base
         $settings = $this->get_settings_for_display();
         $alignment = $settings['alignment'];
 
-        ?>
+?>
         <style>
             .rich-text-section {
                 text-align: <?php echo esc_attr($alignment); ?>;
                 margin: 20px;
+                padding: 0px 150px;
             }
 
             .rich-text-title {
@@ -97,12 +98,20 @@ class Elementor_RichTextWithAlignment extends \Elementor\Widget_Base
             .rich-text-content {
                 font-size: 1em;
             }
+
+            @media screen and (max-width: 768px) {
+                .rich-text-section {
+                    margin: 10px;
+                    padding: 0px 25px;
+                }
+            }
         </style>
 
         <div class="rich-text-section">
             <h2 class="rich-text-title"><?php echo esc_html($settings['title']); ?></h2>
             <div class="rich-text-content"><?php echo wp_kses_post($settings['content']); ?></div>
         </div>
-        <?php
+
+<?php
     }
 }
