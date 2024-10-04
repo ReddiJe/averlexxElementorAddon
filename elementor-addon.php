@@ -32,7 +32,8 @@ function register_hello_world_widget( $widgets_manager ) {
 	require_once( __DIR__ . '/widgets/twoRowsValues.php' );
 	require_once( __DIR__ . '/widgets/fullscreenImageWithText.php' );
 	require_once( __DIR__ . '/widgets/fullscreenIframe.php' );
-
+	require_once( __DIR__ . '/widgets/richTextWithAlignment.php' );
+	
 
 	$widgets_manager->register( new \Elementor_switchSideImage() );
 	$widgets_manager->register( new \Elementor_commentsSlider() );
@@ -56,6 +57,7 @@ function register_hello_world_widget( $widgets_manager ) {
 	$widgets_manager->register( new \Elementor_twoRowsValues() );
 	$widgets_manager->register( new \Elementor_fullscreenImageWithText() );
 	$widgets_manager->register( new \Elementor_fullscreenIframe() );
+	$widgets_manager->register( new \Elementor_richTextWithAlignment() );
 
 
 }
