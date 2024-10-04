@@ -69,7 +69,7 @@ class Elementor_fullscreenImageWithText extends \Elementor\Widget_Base
                 min-height: 100vh;
                 justify-content: center;
                 align-items: center;
-                padding-bottom: 50px;
+                margin-bottom: 50px;
             }
 
             .fullscreen-image {
@@ -101,7 +101,7 @@ class Elementor_fullscreenImageWithText extends \Elementor\Widget_Base
                     height: auto;
                     position: relative;
                     min-height: 50vh;
-                    padding-bottom: 25px;
+                    margin-bottom: 25px;
                 }
 
                 .fullscreen-image {
@@ -126,7 +126,7 @@ class Elementor_fullscreenImageWithText extends \Elementor\Widget_Base
             }
 
             @media (min-width: 769px) {
-                .fullscreen-text {
+                .fullscreen-text p{
                     font-size: 3em;
                     color: #fff;
                 }
