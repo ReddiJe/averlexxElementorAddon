@@ -25,7 +25,6 @@ class Elementor_fullscreenImageWithText extends \Elementor\Widget_Base
 
     protected function register_controls()
     {
-        // Content Section Start
         $this->start_controls_section(
             'content_section',
             [
@@ -34,7 +33,6 @@ class Elementor_fullscreenImageWithText extends \Elementor\Widget_Base
             ]
         );
 
-        // Image Control
         $this->add_control(
             'image',
             [
@@ -46,7 +44,6 @@ class Elementor_fullscreenImageWithText extends \Elementor\Widget_Base
             ]
         );
 
-        // Text Control
         $this->add_control(
             'text',
             [
@@ -57,7 +54,6 @@ class Elementor_fullscreenImageWithText extends \Elementor\Widget_Base
         );
 
         $this->end_controls_section();
-        // Content Section End
     }
 
     protected function render()
@@ -70,7 +66,7 @@ class Elementor_fullscreenImageWithText extends \Elementor\Widget_Base
                 display: flex;
                 position: relative;
                 width: 100%;
-                height: 100vh;
+                min-height: 100vh;
                 justify-content: center;
                 align-items: center;
             }
@@ -95,7 +91,6 @@ class Elementor_fullscreenImageWithText extends \Elementor\Widget_Base
                 position: relative;
                 z-index: 1;
                 color: white;
-                font-size: 2.5em;
                 text-align: center;
             }
 
@@ -103,23 +98,31 @@ class Elementor_fullscreenImageWithText extends \Elementor\Widget_Base
                 .fullscreen-section {
                     flex-direction: column;
                     height: auto;
+                    position: relative;
+                }
+
+                .fullscreen-image {
+                    position: relative;
+                    height: auto;
                 }
 
                 .fullscreen-image img {
-                    height: 50vh;
+                    height: auto;
+                    max-height: 50vh;
+                    width: 100%;
                 }
 
                 .fullscreen-text {
                     margin-top: 20px;
                     font-size: 1.5em;
-                    color: #2c2d2c; /* Черный цвет для текста на мобильных */
+                    color: #2c2d2c;
                 }
             }
 
             @media (min-width: 769px) {
                 .fullscreen-text {
-                    font-size: 3em; /* Увеличенный шрифт для ПК */
-                    color: white; /* Белый цвет текста для ПК */
+                    font-size: 3em;
+                    color: #fff;
                 }
             }
         </style>
