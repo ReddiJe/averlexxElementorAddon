@@ -30,7 +30,7 @@ function register_hello_world_widget( $widgets_manager ) {
 	require_once( __DIR__ . '/widgets/calculator.php' );
 	require_once( __DIR__ . '/widgets/heroSectionWithButton.php' );
 	require_once( __DIR__ . '/widgets/twoRowsValues.php' );
-	require_once( __DIR__ . '/widgets/Fullscreen_ImageWithText.php' );
+	require_once( __DIR__ . '/widgets/FullscreenImageWithText.php' );
 
 
 	$widgets_manager->register( new \Elementor_switchSideImage() );
