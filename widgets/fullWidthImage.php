@@ -1,11 +1,11 @@
 <?php
 
-class Elementor_Fullscreen_Image_With_Text extends \Elementor\Widget_Base
+class Elementor_FullscreenImageWithText extends \Elementor\Widget_Base
 {
 
     public function get_name()
     {
-        return 'fullscreen_image_with_text';
+        return 'FullscreenImageWithText';
     }
 
     public function get_title()
