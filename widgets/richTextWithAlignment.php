@@ -88,6 +88,7 @@ class Elementor_RichTextWithAlignment extends \Elementor\Widget_Base
                 text-align: <?php echo esc_attr($alignment); ?>;
                 margin: 20px;
                 padding: 0px 150px;
+                width: 90%;
             }
 
             .rich-text-title {
